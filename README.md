@@ -9,20 +9,6 @@ The calculator utilizes a binomial tree as its primary data structure. In the Co
 ## What's needed to Run the Program
 To run this application, make sure that you have Python installed on your computer. You also need to have the "numpy" and "tkinter" libraries. If you do not have these libraries, you can install them using pip.
 
-## Instructions to Run the Program
-
-### Before Running
-Ensure you have Python 3.8 or higher installed, as well as pip for managing Python packages. This application has been tested on Windows 10. Also, ensure that numpy is installed.
-
-### Installation
-1. **Clone the Repository**: git clone https://github.com/pkenny11/CoxRossRubinsteinCalc.git
-
-3. **Navigate to the Project Directory**: cd CoxRossRubinsteinCalc
-
-4. **Launch the Program**: python CoxRossRubinsteinCalc.py
-
-### 
-
 ## Input Instructions
 ### Initial Stock Price (S0)
 - **Description**: This is the current price of the stock.
@@ -58,3 +44,15 @@ https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:65a345af-0d02-4e90-8430-74afc8b42
 
 ## Project Motivation and Challenges
 I chose to implement the Cox-Ross-Rubinstein model because it aligns with my professional and educational background, as well as my interest in financial algorithms and their real-world applications. This project allowed me to deepen my understanding of binomial trees and their use in computational finance. One of the technical challenges was managing the computational complexity of the model as the number of steps increased. Optimizing the numpy array operations was a critical part of the program and learning opportunity for me.
+
+## Instructions to Run the Program
+
+### Before Running
+Ensure you have Python 3.8 or higher installed, as well as pip for managing Python packages. This application has been tested on Windows 10. Also, ensure that numpy is installed.
+
+### Installation
+1. **Clone the Repository**: git clone https://github.com/pkenny11/CoxRossRubinsteinCalc.git
+
+3. **Navigate to the Project Directory**: cd CoxRossRubinsteinCalc
+
+4. **Launch the Program**: python CoxRossRubinsteinCalc.py
