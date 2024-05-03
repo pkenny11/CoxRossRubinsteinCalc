@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import numpy as np
 
+# Function to calculate option price
 def binomial_option_pricing(S0, K, r, sigma, T, N, option_type):
     dt = T / N  # Time delta per step
     u = np.exp(sigma * np.sqrt(dt))  # Upward movement factor
@@ -44,44 +45,28 @@ N_var = tk.IntVar()
 option_type_var = tk.StringVar(value='call')
 
 # Setup input fields
-ttk.Label(frame, text="Initial Stock Price (S0):").grid(column=0, row=0)
-ttk.Entry(frame, textvariable=S0_var).grid(column=1, row=0)  # Input for stock price
+labels = ["Initial Stock Price (S0):", "Strike Price (K):", "Risk-Free Rate (r):", "Volatility (σ):", "Time to Maturity (T):", "Number of Steps (N):", "Option Type:"]
+variables = [S0_var, K_var, r_var, sigma_var, T_var, N_var]
 
-ttk.Label(frame, text="Strike Price (K):").grid(column=0, row=1)
-ttk.Entry(frame, textvariable=K_var).grid(column=1, row=1)  # Input for strike price
-
-ttk.Label(frame, text="Risk-Free Rate (r):").grid(column=0, row=2)
-ttk.Entry(frame, textvariable=r_var).grid(column=1, row=2)  # Input for risk-free rate
-
-ttk.Label(frame, text="Volatility (σ):").grid(column=0, row=3)
-ttk.Entry(frame, textvariable=sigma_var).grid(column=1, row=3)  # Input for volatility
-
-ttk.Label(frame, text="Time to Maturity (T):").grid(column=0, row=4)
-ttk.Entry(frame, textvariable=T_var).grid(column=1, row=4)  # Input for time to maturity
-
-ttk.Label(frame, text="Number of Steps (N):").grid(column=0, row=5)
-ttk.Entry(frame, textvariable=N_var).grid(column=1, row=5)  # Input for number of steps
-
-ttk.Label(frame, text="Option Type:").grid(column=0, row=6)
-ttk.Combobox(frame, textvariable=option_type_var, values=['call', 'put']).grid(column=1, row=6)  # Dropdown for option type
+for i, label_text in enumerate(labels):
+    ttk.Label(frame, text=label_text).grid(column=0, row=i)
+    if i == len(labels) - 1:
+        ttk.Combobox(frame, textvariable=option_type_var, values=['call', 'put']).grid(column=1, row=i)  # Dropdown for option type
+    else:
+        ttk.Entry(frame, textvariable=variables[i]).grid(column=1, row=i)  # Input fields
 
 # Function to handle calculation
 def on_calculate():
-    S0 = S0_var.get()  # Get current stock price from input
-    K = K_var.get()  # Get strike price from input
-    r = r_var.get()  # Get risk-free rate from input
-    sigma = sigma_var.get()  # Get volatility from input
-    T = T_var.get()  # Get time to maturity from input
-    N = N_var.get()  # Get number of steps from input
+    params = [var.get() for var in variables]  # Get input values
     option_type = option_type_var.get()  # Get option type from input
     
-    price = binomial_option_pricing(S0, K, r, sigma, T, N, option_type)  # Calculate the option price
+    price = binomial_option_pricing(*params, option_type)  # Calculate the option price
     result_label.config(text=f"Option Price: {price:.2f}")  # Display the calculated price
 
 calculate_button = ttk.Button(frame, text="Calculate", command=on_calculate)  # Button to initiate calculation
-calculate_button.grid(column=1, row=7)
+calculate_button.grid(column=1, row=len(labels))
 
 result_label = ttk.Label(frame, text="Option Price: ")  # Label to display results
-result_label.grid(column=0, row=8, columnspan=2)
+result_label.grid(column=0, row=len(labels)+1, columnspan=2)
 
 root.mainloop()  # Start the GUI event loop
