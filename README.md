@@ -15,14 +15,11 @@ To run this application, make sure that you have Python installed on your comput
 Ensure you have Python 3.8 or higher installed, as well as pip for managing Python packages. This application has been tested on Windows 10. Also, ensure that numpy is installed.
 
 ### Installation
-1. **Clone the Repository**
-Clone the Repository Using: git clone https://github.com/pkenny11/CoxRossRubinsteinCalc.git
+1. **Clone the Repository**: git clone https://github.com/pkenny11/CoxRossRubinsteinCalc.git
 
-3. **Navigate to the Project Directory**
-Change into the Project Directory: cd CoxRossRubinsteinCalc
+3. **Navigate to the Project Directory**: cd CoxRossRubinsteinCalc
 
-4. **Launch the Program**
-Run the following command in the project directory: python CoxRossRubinsteinCalc.py
+4. **Launch the Program**: python CoxRossRubinsteinCalc.py
 
 ### 
 
