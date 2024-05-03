@@ -3,6 +3,15 @@
 ## Introduction
 For my Final Project, I've decided to create a "Options Pricing Calculator", which is based on the Binomial Options Pricing Model. It includes a convenient graphical interface for calculating the price of European options using the Cox-Ross-Rubinstein binomial tree model.
 
+### Options Background
+In the contex in which how they're used for this project, Options are a financial derivative that gives the "holder" the right to buy or sell an underlying asset (stock) at a predetermined price, by a specific predetermined date. For example, you can purchase a call option that would enable someone to buy a stock (currently priced at $100) for $105 dollars by a certain date.
+
+### Binomial Options Pricing Model
+The Binomial Options Pricing Model important tool in the field of quantitative finance for valuing options. It provides flexiblity and an intuitive system for pricing a variety of options.
+
+### Why is it useful:
+Being able to understand and accurately price options is critical for investors, traders and other financial professionals. This type of calculator can serve as a useful tool. By leveraging the power and flexibility of python with a powerful financial algorithm, people can use a tool like this to make more informed and accurate decisions.
+
 ## Data Struture
 The calculator utilizes a binomial tree as its primary data structure. In the Cox-Ross-Rubinstein model, this tree represents different possible paths that the stock price might take over the option's "life". Each node on the tree represents a potential future price of the stock, derived from up and down movements calculated using the stock's volatility and the fixed time intervals to maturity. The tree is implemented as a two-dimensional array where each row represents a time step and each column represents a possible price at that time step. The final price of the option is determined by aggregating these possible outcomes, weighted by their probability of occuring.
 
