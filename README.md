@@ -16,13 +16,12 @@ Ensure you have Python 3.8 or higher installed, as well as pip for managing Pyth
 
 ### Installation
 1. **Clone the Repository**
-'''bash
 Clone the Repository Using: git clone https://github.com/pkenny11/CoxRossRubinsteinCalc.git
 
-2. **Navigate to the Project Directory**
+3. **Navigate to the Project Directory**
 Change into the Project Directory: cd CoxRossRubinsteinCalc
 
-3. **Launch the Program**
+4. **Launch the Program**
 Run the following command in the project directory: python CoxRossRubinsteinCalc.py
 
 ### 
