@@ -1,7 +1,7 @@
 # Options Pricing Calculator (Cox, Ross, Rubinstein)
 
 ## Introduction
-For my Final Project, I've decided to create a "Options Pricing Calculator", which is based on the Binomial Options Pricing Model. It includes a convenient graphical interface for calculating the price of European options using the Cox-Ross-Rubinstein binomial tree model.
+For my Project, I've decided to create a "Options Pricing Calculator", which is based on the Binomial Options Pricing Model. It includes a convenient graphical interface for calculating the price of European options using the Cox-Ross-Rubinstein binomial tree model.
 
 #### Options Background
 In the contex in which how they're used for this project, Options are a financial derivative that gives the "holder" the right to buy or sell an underlying asset (stock) at a predetermined price, by a specific predetermined date. For example, you can purchase a call option that would enable someone to buy a stock (currently priced at $100) for $105 dollars by a certain date.
