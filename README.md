@@ -8,6 +8,14 @@ The calculator utilizes a binomial tree as its primary data structure. In the Co
 
 ## Instructions to Run the Program
 
+### Before Running
+Ensure you have Python 3.8 or higher installed, as well as pip for managing Python packages. This application has been tested on Windows 10.
+
+### Installation
+Clone the Repository Using: git clone https://github.com/username/OptionsPricingCalculator.git
+
+### 
+
 ## What's needed to Run the Program
 To run this application, make sure that you have Python installed on your computer. You also need to have the "numpy" and "tkinter" libraries. If you do not have these libraries, you can install them using pip.
 
