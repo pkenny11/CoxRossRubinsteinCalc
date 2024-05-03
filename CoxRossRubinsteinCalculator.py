@@ -75,10 +75,10 @@ def on_calculate():
     N = N_var.get()  # Get number of steps from input
     option_type = option_type_var.get()  # Get option type from input
     
-    price = binomial_option_pricing(S0, K, r, sigma, T, N, option_type)  # Calculate option price
-    result_label.config(text=f"Option Price: {price:.2f}")  # Display calculated price
+    price = binomial_option_pricing(S0, K, r, sigma, T, N, option_type)  # Calculate the option price
+    result_label.config(text=f"Option Price: {price:.2f}")  # Display the calculated price
 
-calculate_button = ttk.Button(frame, text="Calculate", command=on_calculate)  # Button to trigger calculation
+calculate_button = ttk.Button(frame, text="Calculate", command=on_calculate)  # Button to initiate calculation
 calculate_button.grid(column=1, row=7)
 
 result_label = ttk.Label(frame, text="Option Price: ")  # Label to display results
