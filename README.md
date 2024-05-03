@@ -42,5 +42,7 @@ To run this application, make sure that you have Python installed on your comput
 
 ## Application step through (link to PowerPoint)
 
+https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:65a345af-0d02-4e90-8430-74afc8b42854
+
 ## Project Motivation and Challenges
 I chose to implement the Cox-Ross-Rubinstein model because it aligns with my professional and educational background, as well as my interest in financial algorithms and their real-world applications. This project allowed me to deepen my understanding of binomial trees and their use in computational finance. One of the technical challenges was managing the computational complexity of the model as the number of steps increased. Optimizing the numpy array operations was a critical part of the program and learning opportunity for me.
