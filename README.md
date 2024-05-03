@@ -9,7 +9,7 @@ The calculator utilizes a binomial tree as its primary data structure. In the Co
 ## Instructions to Run the Program
 
 ### Before Running
-Ensure you have Python 3.8 or higher installed, as well as pip for managing Python packages. This application has been tested on Windows 10.
+Ensure you have Python 3.8 or higher installed, as well as pip for managing Python packages. This application has been tested on Windows 10. Also, ensure that numpy is installed.
 
 ### Installation
 Clone the Repository Using: git clone https://github.com/username/OptionsPricingCalculator.git
