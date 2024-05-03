@@ -6,6 +6,9 @@ For my Final Project, I've decided to create a "Options Pricing Calculator", whi
 ## Data Struture
 The calculator utilizes a binomial tree as its primary data structure. In the Cox-Ross-Rubinstein model, this tree represents different possible paths that the stock price might take over the option's "life". Each node on the tree represents a potential future price of the stock, derived from up and down movements calculated using the stock's volatility and the fixed time intervals to maturity. The tree is implemented as a two-dimensional array where each row represents a time step and each column represents a possible price at that time step. The final price of the option is determined by aggregating these possible outcomes, weighted by their probability of occuring.
 
+## What's needed to Run the Program
+To run this application, make sure that you have Python installed on your computer. You also need to have the "numpy" and "tkinter" libraries. If you do not have these libraries, you can install them using pip.
+
 ## Instructions to Run the Program
 
 ### Before Running
@@ -13,12 +16,10 @@ Ensure you have Python 3.8 or higher installed, as well as pip for managing Pyth
 
 ### Installation
 **Clone the Repository**
+'''bash
 Clone the Repository Using: git clone https://github.com/username/OptionsPricingCalculator.git
 
 ### 
-
-## What's needed to Run the Program
-To run this application, make sure that you have Python installed on your computer. You also need to have the "numpy" and "tkinter" libraries. If you do not have these libraries, you can install them using pip.
 
 ## Input Instructions
 ### Initial Stock Price (S0)
